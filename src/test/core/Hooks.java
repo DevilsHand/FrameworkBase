@@ -1,16 +1,17 @@
-package test.core;
+package core;
+import test.core.Scenario;
+import org.testng.annotations.BeforeMethod;
 
-import 
 
 public abstract class Hooks {
 	public static Scenario scenario;
 	public Hooks() {
 		scenario = new Scenario();
-		scenario.setName();
 	}
 	public static Scenario getScenario() { return scenario; }
-	
-	@Before
+
+	@BeforeMethod
+
 	public void setup() {
 		System.out.println("Criando setup dos testes");
 	}

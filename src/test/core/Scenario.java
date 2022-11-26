@@ -1,4 +1,4 @@
-package test.core;
+package core;
 
 public class Scenario {
 	private String name;

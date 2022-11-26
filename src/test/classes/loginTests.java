@@ -1,6 +1,6 @@
-package test.classes;
+package classes;
 
-import test.core.Hooks;
+import core.Hooks;
 
 public class loginTests extends Hooks {
 
