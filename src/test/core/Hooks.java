@@ -23,7 +23,7 @@ public abstract class Hooks {
 		relatorio.add("[ERRO] - " + context.getThrowable().getMessage());
 		relatorio.add("Encerrando setup do teste: " + m.getName());
 		for (var msg: relatorio) {
-			System.out.println(msg);//TODO: Alterar e colocar uma chamada para o logger
+			System.out.println(msg);
 		}
 	}
 }
