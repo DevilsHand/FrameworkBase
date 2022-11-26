@@ -18,9 +18,10 @@ public abstract class Hooks {
 	}
 	@AfterMethod
 	public void tearDown(Method m, ITestResult context){
-		relatorio.add("Encerrando setup do teste: " + m.getName());
-		String mensagem = (context.isSuccess())? "[SUCESSO]": "[FALHA]";
+		String mensagem = (context.isSuccess())? "[SUCESSO] - ": "[FALHA] - ";
 		relatorio.add(mensagem+" Cenario: " + m.getName());
+		relatorio.add("[ERRO] - " + context.getThrowable().getMessage());
+		relatorio.add("Encerrando setup do teste: " + m.getName());
 		for (var msg: relatorio) {
 			System.out.println(msg);//TODO: Alterar e colocar uma chamada para o logger
 		}

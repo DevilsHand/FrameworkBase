@@ -8,8 +8,8 @@ public class TestesDeExemplo extends Hooks {
 
     @Test(testName = "Teste Exemplo 1")
     public void testeDeExemplo(){
-        Assert.assertEquals("isso é verdade", "isso é verdade");
-        Assert.assertEquals("isso também é verdade", "isso também é verdade");
+        Assert.assertEquals("isso é  verdade", "isso é verdade");
+        Assert.assertEquals("isso também é verdade", "isso também é  verdade");
     }
 
     @Test(testName = "Teste Exemplo 2")
