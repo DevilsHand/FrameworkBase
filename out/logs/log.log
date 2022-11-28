@@ -1,0 +1,34 @@
+28-11-2022 12:32:50.778| INFO - 
+---------------------------------------------
+[INSTANCIANDO TESTES] { class test.classes.TestesDeExemplo }
+---------------------------------------------
+
+28-11-2022 12:32:50.962| INFO - [INICIANDO] - Setup do teste: testeDeExemplo
+28-11-2022 12:32:50.965| INFO - Validando se o campo <Campo de teste 1> tem o valor correto
+28-11-2022 12:32:51.968| INFO - Validando se o campo <Campo de teste 2> tem o valor isso também é verdade
+28-11-2022 12:32:53.974| INFO - [SUCESSO] - Cenario: testeDeExemplo
+28-11-2022 12:32:53.977| INFO - [ENCERRANDO] testeDeExemplo
+--------------------------------------------------------
+28-11-2022 12:32:53.982| INFO - [INICIANDO] - Setup do teste: testeDeExemplo2
+28-11-2022 12:32:53.984| INFO - Validando se o campo <Campo 3> tem o valor isso não é verdade
+28-11-2022 12:32:54.016| INFO - [FALHA] - Cenario: testeDeExemplo2
+28-11-2022 12:32:54.017| ERROR- expected [isso não é verdade] but found [isso nao eh verdade]
+28-11-2022 12:32:54.017| INFO - [ENCERRANDO] testeDeExemplo2
+--------------------------------------------------------
+28-11-2022 12:34:07.735| INFO - 
+---------------------------------------------
+[INSTANCIANDO TESTES] { class test.classes.TestesDeExemplo }
+---------------------------------------------
+
+28-11-2022 12:34:08.027| INFO - [INICIANDO] - Setup do teste: testeDeExemplo
+28-11-2022 12:34:08.034| INFO - Validando se o campo <Campo de teste 1> tem o valor correto
+28-11-2022 12:34:09.048| INFO - Validando se o campo <Campo de teste 2> tem o valor <isso também é verdade>
+28-11-2022 12:34:11.056| INFO - [SUCESSO] - Cenario: testeDeExemplo
+28-11-2022 12:34:11.057| INFO - [ENCERRANDO] testeDeExemplo
+--------------------------------------------------------
+28-11-2022 12:34:11.065| INFO - [INICIANDO] - Setup do teste: testeDeExemplo2
+28-11-2022 12:34:11.067| INFO - Validando se o campo <Campo 3> tem o valor <isso não é verdade>
+28-11-2022 12:34:11.095| INFO - [FALHA] - Cenario: testeDeExemplo2
+28-11-2022 12:34:11.095| ERROR- expected [isso não é verdade] but found [isso nao eh verdade]
+28-11-2022 12:34:11.095| INFO - [ENCERRANDO] testeDeExemplo2
+--------------------------------------------------------
