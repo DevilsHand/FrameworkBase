@@ -14,15 +14,7 @@
             <totalSizeCap>100MB</totalSizeCap>
         </rollingPolicy>
     </appender>
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern></pattern>
-        </encoder>
-    </appender>
     <logger name="test.core" additivity="true" level="info">
         <appender-ref ref="SAVE-TO-FILE" />
     </logger>
-    <root level="info">
-        <appender-ref ref="STDOUT" />
-    </root>
 </configuration>

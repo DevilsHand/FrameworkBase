@@ -8,9 +8,7 @@ import static test.core.logger.LogWritter.getLogger;
 
 public abstract class Hooks {
 	public Hooks(){
-		getLogger().info("\n---------------------------------------------\n"+
-		"[INSTANCIANDO TESTES] { "+getClass().toString()+" }\n"+
-		"---------------------------------------------\n");
+		getLogger().info("[INSTANCIANDO TESTES] { "+getClass().toString()+" }");
 	}
 	@BeforeMethod
 	public void setup(Method m) {
