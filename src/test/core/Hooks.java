@@ -1,33 +1,30 @@
-package core;
+package test.core;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
+import static test.core.logger.LogWritter.getLogger;
+
 
 public abstract class Hooks {
-	List<String> relatorio;
 	public Hooks(){
-		relatorio = new ArrayList<>();
+		getLogger().info("\n---------------------------------------------\n"+
+		"[INSTANCIANDO TESTES] { "+getClass().toString()+" }\n"+
+		"---------------------------------------------\n");
 	}
 	@BeforeMethod
 	public void setup(Method m) {
-		relatorio.add("[INICIANDO] - Setup do teste: "+m.getName());
+		getLogger().info("[INICIANDO] - Setup do teste: "+m.getName());
 	}
 	@AfterMethod
 	public void tearDown(Method m, ITestResult context){
 		String mensagem = (context.isSuccess())? "[SUCESSO] - ": "[FALHA] - ";
-		relatorio.add(mensagem+" Cenario: " + m.getName());
-		if (context.getThrowable()!= null){
-			relatorio.add("[ERRO] - " + context.getThrowable().getMessage());
+		getLogger().info(mensagem+"Cenario: " + m.getName());
+		if (context.getThrowable() != null) {
+			getLogger().error(context.getThrowable().getMessage());
 		}
 
-		relatorio.add("Encerrando setup do teste: " + m.getName()+
+		getLogger().info("[ENCERRANDO] " + m.getName()+
 				"\n--------------------------------------------------------");
-		for (var msg: relatorio) {
-			System.out.println(msg);
-		}
 	}
 }
