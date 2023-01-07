@@ -25,4 +25,6 @@ public abstract class Hooks {
 		getLogger().info("[ENCERRANDO] " + m.getName()+
 				"\n--------------------------------------------------------");
 	}
+
+	//TODO: refatorar pra outro pacote
 }

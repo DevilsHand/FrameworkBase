@@ -20,21 +20,20 @@ public enum DriverTypeFactory {
 
     public static WebDriver getDriver(DriverTypeFactory typeFactory) {
         System.setProperty(typeFactory.property, typeFactory.path);
-        WebDriver driver = null;
         try {
             switch (typeFactory) {
                 case GECKO_DRIVER:
                 case WIN_GECKO_DRIVER:
-                    driver = new FirefoxDriver();
-                    break;
+                    return new FirefoxDriver();
                 case CHROME_DRIVER:
                 case WIN_CHROME_DRIVER:
-                    driver = new ChromeDriver();
-                    break;
+                    return new ChromeDriver();
+                default:
+                    throw new RuntimeException();
             }
         } catch (Exception e) {
             LogWritter.getLogger().error(e.getMessage());
         }
-        return driver;
+        return null;
     }
 }
