@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TestFrameworkBase" />
+        <module name="FrameworkBase-Web-test" />
+        <module name="FrameworkBase-jUnit-test" />
       </profile>
     </annotationProcessing>
   </component>
