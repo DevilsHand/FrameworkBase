@@ -1,2 +1,4 @@
 /bin/
 /target/
+/out/logs/*.log
+/Web-test/webDriver/*
