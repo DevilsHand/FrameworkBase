@@ -1,9 +1,9 @@
-package test.core.pepino.steps;
+package test.pepino.steps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import test.core.pepino.hooks.Hooks;
+import test.pepino.hooks.Hooks;
 
 public class StepsTest {
 

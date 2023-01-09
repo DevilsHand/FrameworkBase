@@ -1,1 +1,5 @@
-test/core/pepino/runners/Runner.class
+test/core/web/enums/DriverTypeFactory.class
+test/core/web/enums/DriverTypeFactory$1.class
+test/pepino/hooks/Hooks.class
+test/pepino/runners/Runner.class
+test/pepino/steps/StepsTest.class

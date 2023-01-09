@@ -1,4 +1,4 @@
-package test.core.pepino.hooks;
+package test.pepino.hooks;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.After;

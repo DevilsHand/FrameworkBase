@@ -1,4 +1,5 @@
 test/SimulatedWait.class
 test/core/logger/LogWritter.class
 test/core/exception/InvalidCharException.class
+test/classes/TestesDeExemplo.class
 test/core/Hooks.class
