@@ -12,7 +12,6 @@ public abstract class Page {
        String elementPath;
        WebPageObj page = this.getClass().getAnnotation(WebPageObj.class);
        if (page == null) throw new RuntimeException();
-       Context.getDriver().get(page.url());
        Field[] fields = this.getClass().getDeclaredFields();
        for (Field field : fields){
            field.setAccessible(true);
