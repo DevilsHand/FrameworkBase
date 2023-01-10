@@ -14,6 +14,12 @@ public class SplashPage extends Page {
     private WebElement password;
     @FindBy(xPath = "//input[@id='login-button']")
     private WebElement loginBtn;
+    @FindBy(xPath = "//div[@class='bot_column']")
+    private WebElement title;
+
+    public WebElement getTitle() {
+        return title;
+    }
 
     public WebElement getUserName() {
         return userName;
