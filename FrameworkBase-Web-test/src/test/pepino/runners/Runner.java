@@ -8,8 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(dryRun = false,
-        features = "src/test/resources/teste.feature",
-        glue = {"test.pepino.steps", "test.pepino.hooks"}, tags = "@Tag",
+        features = "src/test/resources",
+        glue = {"test.pepino.steps", "test.pepino.hooks"},
+        tags = "@Login",
         monochrome = true, publish = false,
         snippets = SnippetType.CAMELCASE,
         stepNotifications = true)
