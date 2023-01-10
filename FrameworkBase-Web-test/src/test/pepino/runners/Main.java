@@ -1,11 +1,13 @@
 package test.pepino.runners;
 
+import test.core.Context;
+import test.pepino.logic.SplashLogic;
 
-import test.pepino.PageTeste;
 
 public class Main {
     public static void main(String[] args) {
-        String path = (new PageTeste()).getPath();
-        System.out.println(path);
+        Context.init();
+        var logic = new SplashLogic();
+        logic.logarComUserCorreto();
     }
 }
